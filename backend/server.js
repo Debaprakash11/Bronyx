@@ -33,6 +33,7 @@ app.post("/api/bookings", async (req, res) => {
     res.status(201).json({ message: "Booking saved successfully!" });
   } catch (error) {
     res.status(500).json({ error: "Error saving booking" });
+    console.log("hiii");
   }
 });
 
