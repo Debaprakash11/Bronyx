@@ -2,20 +2,45 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-white p-8 md:p-16 rounded-lg shadow-lg max-w-4xl mx-auto my-12 mt-20">
-      <h1 className="text-3xl font-semibold text-center mb-4 text-gray-800">Contact Us</h1>
-      <p className="text-xl text-center mb-4 text-gray-600">We'd love to hear from you. Reach out to us through the following:</p>
-      
-      <div className="flex flex-col items-center md:flex-row justify-center space-y-4 md:space-x-8 md:space-y-0">
-        <div className="flex items-center space-x-3">
-          <span className="text-xl text-gray-800">📧</span>
-          <p className="text-lg text-gray-600">support@logistics.com</p>
+    <div className="bg-gradient-to-r from-blue-100 to-indigo-200 p-8 md:p-16 rounded-3xl shadow-lg max-w-4xl mx-auto my-12 mt-20">
+      <h1 className="text-4xl font-extrabold text-center mb-6 text-gray-900 animate-fadeInUp">Contact Us</h1>
+      <p className="text-xl text-center mb-8 text-gray-700 opacity-90 animate-fadeInUp animation-delay-300">
+        We'd love to hear from you. Reach out to us through the following:
+      </p>
+
+      <div className="flex flex-col items-center md:flex-row justify-center space-y-6 md:space-x-12 md:space-y-0 animate-fadeInUp animation-delay-500">
+        <div className="flex items-center space-x-4">
+          <span className="text-3xl text-blue-600">📧</span>
+          <p className="text-lg text-gray-800 font-semibold">support@logistics.com</p>
         </div>
-        <div className="flex items-center space-x-3">
-          <span className="text-xl text-gray-800">📞</span>
-          <p className="text-lg text-gray-600">+123 456 7890</p>
+        <div className="flex items-center space-x-4">
+          <span className="text-3xl text-blue-600">📞</span>
+          <p className="text-lg text-gray-800 font-semibold">+123 456 7890</p>
         </div>
       </div>
+
+      {/* Animation for Contact Section */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fadeInUp {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+        .animation-delay-300 {
+          animation-delay: 300ms;
+        }
+        .animation-delay-500 {
+          animation-delay: 500ms;
+        }
+      `}</style>
     </div>
   );
 };

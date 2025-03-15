@@ -23,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/page1" element={<Page1 />} />
-        {/* services layers  */}
+        {/* nested layers  */}
         <Route path="/services/packing" element={<Packing />} />
 
         
