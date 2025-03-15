@@ -11,7 +11,7 @@ const AdminDashboard = () => {
   }, []);
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-6 bg-gray-50 min-h-screen mt-20">
       <h2 className="text-3xl font-semibold text-gray-800 mb-6">Admin Dashboard</h2>
       <div className="overflow-x-auto bg-white shadow-md rounded-lg">
         <table className="w-full table-auto text-sm text-gray-700">
