@@ -1,4 +1,10 @@
 import React from "react";
+import HouseholdImg from "../assets/Banner4.jpg"
+import LoadingImg from "../assets/Banner6.jpg";
+import PackImg from "../assets/Banner2.jpg"
+import Unpack from "../assets/Banner.jpeg"
+import Unload from "../assets/Banner5.jpg"
+
 
 const Services = () => {
   return (
@@ -10,7 +16,7 @@ const Services = () => {
         {/* Service 1: Household Shifting */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x300" // Replace with actual image URL
+            src={HouseholdImg} // Replace with actual image URL
             alt="Household Shifting"
             className="w-full h-48 object-cover"
           />
@@ -25,7 +31,7 @@ const Services = () => {
         {/* Service 2: Packing */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x300" // Replace with actual image URL
+            src={PackImg} // Replace with actual image URL
             alt="Packing"
             className="w-full h-48 object-cover"
           />
@@ -40,7 +46,7 @@ const Services = () => {
         {/* Service 3: Loading */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x300" // Replace with actual image URL
+            src={LoadingImg} // Replace with actual image URL
             alt="Loading"
             className="w-full h-48 object-cover"
           />
@@ -55,7 +61,7 @@ const Services = () => {
         {/* Service 4: Unloading */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x300" // Replace with actual image URL
+            src={Unload}// Replace with actual image URL
             alt="Unloading"
             className="w-full h-48 object-cover"
           />
@@ -70,7 +76,7 @@ const Services = () => {
         {/* Service 5: Unpacking */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x300" // Replace with actual image URL
+            src={Unpack}// Replace with actual image URL
             alt="Unpacking"
             className="w-full h-48 object-cover"
           />

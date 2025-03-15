@@ -3,7 +3,7 @@ import Services from "./Services";
 import Booking from "./Booking";
 import Contact from "./Contact";
 import Page1 from "./Page1";
-import Banner from "../assets/Truck.png";
+import Banner from "../assets/Banner 3.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
           <h1 className="text-5xl font-bold mb-6 leading-tight">
             Welcome to Bronyx Packers & Movers
           </h1>
-          <p className="text-xl mb-10 max-w-2xl mx-auto">
+          <p className="text-xl mb-30 max-w-2xl mx-auto">
             Your trusted partner in seamless household shifting, expert packing, and hassle-free moving services. We ensure a smooth transition to your new home with care and efficiency.
           </p>
           {/* Get Quotation Button */}
