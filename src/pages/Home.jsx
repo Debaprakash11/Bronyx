@@ -2,7 +2,7 @@ import React from "react";
 import Services from "./Services";
 import Booking from "./Booking";
 import Contact from "./Contact";
-import Page1 from "./Page1";
+
 import Banner from "../assets/Banner 3.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -59,7 +59,7 @@ const Home = () => {
         {/* Page1 Component */}
         {/* <div className="mb-16">
           <Page1 />
-        </div> */}
+        </div> */}  
 
         {/* Booking Component */}
         <div className="mb-16">

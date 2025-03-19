@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebaseConfig"; // Import Firestore configuration
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -10,22 +12,36 @@ const Booking = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false); // For submit button state
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Booking submitted! We will contact you soon.");
-    console.log(formData);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "Household Shifting",
-      date: "",
-      message: "",
-    });
+    setLoading(true);
+
+    try {
+      // Add booking data to Firestore
+      await addDoc(collection(db, "bookings"), formData);
+      alert("Booking submitted successfully! We will contact you soon.");
+      
+      // Reset form fields
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "Household Shifting",
+        date: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error saving booking:", error);
+      alert("Error submitting booking. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -91,9 +107,12 @@ const Booking = () => {
           ></textarea>
           <button
             type="submit"
-            className="p-3 text-lg bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+            className={`p-3 text-lg rounded transition ${
+              loading ? "bg-gray-500" : "bg-gray-800 hover:bg-gray-700"
+            } text-white`}
+            disabled={loading}
           >
-            Submit Booking
+            {loading ? "Submitting..." : "Submit Booking"}
           </button>
         </form>
       </div>
