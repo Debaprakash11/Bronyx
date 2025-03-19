@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa"; // Hamburger and close icons
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Dropdown for services
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Mobile menu state
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const mobileMenuRef = useRef(null); // Create a ref for the mobile menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,19 +17,40 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Function to determine the active link
-  const isActiveLink = (path) => location.pathname === path ? "text-blue-400" : "";
+  const isActiveLink = (path) => (location.pathname === path ? "text-blue-400" : "");
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  return (
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isMobileMenuOpen &&
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
+        setIsMobileMenuOpen(false);
+        setIsDropdownOpen(false); // also close the dropdown if its open.
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
+return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${location.pathname === "/" && !isScrolled
-        ? "bg-transparent text-white"
-        : "bg-gray-800 text-white shadow-lg"
-        }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        location.pathname === "/" && !isScrolled
+          ? "bg-transparent text-white"
+          : "bg-gray-800 text-white shadow-lg"
+      }`}
     >
-      <div className="container mx-auto flex items-center justify-between p-4 md:px-6">
+<div className="container mx-auto flex items-center justify-between p-4 md:px-6">
         {/* Logo */}
         <Link to="/" className="text-xl md:text-2xl font-bold text-white">
           Bronyx Packers
@@ -106,15 +128,35 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle Button */}
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMobileMenu} className="text-white">
-            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+          <button onClick={toggleMobileMenu} className="relative group">
+            <div
+              className={`relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md`}
+            >
+              <div
+                className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden ${isMobileMenuOpen ? 'rotate-45' : ''}`}
+              >
+                <div
+                  className={`bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${isMobileMenuOpen ? 'rotate-[45deg]' : ''}`}
+                ></div>
+                <div
+                  className={`bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 ${isMobileMenuOpen ? '-translate-x-10' : ''}`}
+                ></div>
+                <div
+                  className={`bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${isMobileMenuOpen ? '-rotate-[45deg]' : ''}`}
+                ></div>
+              </div>
+            </div>
           </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
-      {isMobileMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-gray-800 text-white p-4 md:hidden">
+
+
+{isMobileMenuOpen && (
+         <div
+          ref={mobileMenuRef} // Attach the ref to the mobile menu div
+          className="absolute top-16 left-0 w-full bg-gray-800 text-white p-4 md:hidden"
+        >
           <ul>
             <li>
               <Link
@@ -184,7 +226,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-        </div>
+     </div>
       )}
     </nav>
   );

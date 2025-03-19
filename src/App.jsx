@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import AdminDashboard from "./pages/AdminDashboard";
-import Page1 from "./pages/Page1";
+// import Page1 from "./pages/Page1";
 import Packing from "./pages/Packing";
 
 
@@ -22,7 +22,7 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/page1" element={<Page1 />} />
+        {/* <Route path="/page1" element={<Page1 />} /> */}
         {/* nested layers  */}
         <Route path="/services/packing" element={<Packing />} />
 

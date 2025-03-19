@@ -57,9 +57,9 @@ const Home = () => {
         </div>
 
         {/* Page1 Component */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <Page1 />
-        </div>
+        </div> */}
 
         {/* Booking Component */}
         <div className="mb-16">
@@ -73,9 +73,7 @@ const Home = () => {
       </div>
 
       {/* Footer Section (optional) */}
-      <footer className="bg-gray-800 text-white text-center py-6">
-        <p>&copy; 2025 Bronyx Packers & Movers. All Rights Reserved.</p>
-      </footer>
+     
     </div>
   );
 };
