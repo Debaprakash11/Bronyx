@@ -9,6 +9,10 @@ import Footer from "./component/Footer";
 import AdminDashboard from "./pages/AdminDashboard";
 // import Page1 from "./pages/Page1";
 import Packing from "./pages/Packing";
+import Terms from "./pages/Terms";
+import Faq from "./pages/Faq";
+import Privacy from "./pages/Privacy";
+import Blog from "./pages/Blog";
 
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/terms" element={<Terms/>} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/privacy" element={<Privacy/>} />
+        <Route path="/blog" element={<Blog/>} />
         {/* <Route path="/page1" element={<Page1 />} /> */}
         {/* nested layers  */}
         <Route path="/services/packing" element={<Packing />} />
