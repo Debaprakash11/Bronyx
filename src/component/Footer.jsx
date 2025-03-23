@@ -28,7 +28,8 @@ const Footer = () => {
               <li><a href="/blog" className="hover:text-gray-400">Blog</a></li>
             </ul>
           </div>
-
+          
+{/* bghsdwkkkkkksy jhefyjwef wywufejvuwike */}
           {/* About Us Section */}
           <div>
             <h4 className="text-lg font-semibold mb-4">About Us</h4>

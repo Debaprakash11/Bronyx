@@ -80,11 +80,11 @@ return (
             </span>
             {/* Services Dropdown */}
             <ul className={`absolute left-0 mt-2 w-48 bg-gray-700 text-white shadow-lg rounded-md overflow-hidden ${isDropdownOpen ? 'block' : 'hidden'}`}>
-              {[{ name: "Household Shifting", path: "/services/household-shifting" },
-                { name: "Packing", path: "/services/packing" },
-                { name: "Loading", path: "/services/loading" },
-                { name: "Unloading", path: "/services/unloading" },
-                { name: "Unpacking", path: "/services/unpacking" },
+              {[{ name: "Household Shifting", path: "/services/householdshifting" },
+                  { name: "Packing And Moving", path: "/services/packingandmoving" },
+                  { name: "Car Shifting", path: "/services/carshifting" },
+                  { name: "Bike Shifting", path: "/services/bikeshifting" },
+                  { name: "Loading And Unloading", path: "/services/loadingandunloading" },
                 { name: "More", path: "/services" }].map((service, index) => (
                   <li key={index}>
                     <Link
@@ -195,11 +195,13 @@ return (
                 Services
               </button>
               <ul className={`bg-gray-700 text-white shadow-lg rounded-md pl-4 ${isDropdownOpen ? 'block' : 'hidden'}`}>
-                {[{ name: "Household Shifting", path: "/services/household-shifting" },
-                  { name: "Packing", path: "/services/packing" },
-                  { name: "Loading", path: "/services/loading" },
-                  { name: "Unloading", path: "/services/unloading" },
-                  { name: "Unpacking", path: "/services/unpacking" },
+                {[{ name: "Household Shifting", path: "/services/householdshifting" },
+                  { name: "Packing And Moving", path: "/services/packingandmoving" },
+                  { name: "Car Shifting", path: "/services/carshifting" },
+                  { name: "Bike Shifting", path: "/services/bikeshifting" },
+                  { name: "Loading And Unloading", path: "/services/loadingandunloading" },
+
+                 
                   { name: "More", path: "/services" }].map((service, index) => (
                     <li key={index}>
                       <Link
