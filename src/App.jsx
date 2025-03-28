@@ -24,7 +24,7 @@ import SmartMoveBudget from "./ServicePages/SmartMoveBudget";
 import PackingAndMoving from "./ServicePages/PackingAndMoving";
 import CarShifting from "./ServicePages/CarShifting";
 import BikeShifting from "./ServicePages/BikeShifting";
-
+import About from "./pages/About";
 
 function App() {
   return (
@@ -41,6 +41,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/about" element={<About/>} />
         
         
         
