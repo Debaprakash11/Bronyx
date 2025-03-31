@@ -9,6 +9,7 @@ import Unload from "../assets/Banner5.jpg";
 const services = [
   { name: "Packing And Moving", img: PackImg, path: "/services/packingandmoving" },
   { name: "Car Shifting", img: HouseholdImg, path: "/services/carshifting" },
+  { name: "Bike  Shifting", img: HouseholdImg, path: "/services/bikeshifting" },
   { name: "Home Shifting", img: HouseholdImg, path: "/services/householdshifting" },
   { name: "Insurance", img: HouseholdImg, path: "/services/insurance" },
   { name: "Loading & Unloading", img: LoadingImg, path: "/services/loadingandunloading" },
@@ -16,7 +17,7 @@ const services = [
   { name: "Pre-Moving", img: HouseholdImg, path: "/services/premoving" },
   { name: "Quotation", img: HouseholdImg, path: "/services/quotation" },
   { name: "Safe Storage", img: HouseholdImg, path: "/services/safestorage" },
-  { name: "Smart Move Budget", img: HouseholdImg, path: "/services/smartmovebudget" },
+  // { name: "Smart Move Budget", img: HouseholdImg, path: "/services/smartmovebudget" },
 ];
 
 

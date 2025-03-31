@@ -41,6 +41,14 @@ const Home = () => {
           >
             Moving with Love, Moving with Care
           </motion.h1>
+          <motion.h1
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-4xl sm:text-6xl font-extrabold mb-6"
+          >
+            Moving with Love, Moving with Care
+          </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

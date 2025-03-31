@@ -44,12 +44,8 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav
-  className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${location.pathname === "/" && !isScrolled
-    ? "bg-transparent text-white"
-    : "bg-white text-black shadow-lg"
-    }`}
->
+    <nav className="fixed top-0 w-full z-50 bg-white text-black shadow-lg">
+
   <div className="container mx-auto flex items-center justify-between p-4 md:px-6">
     {/* Logo */}
     <Link to="/" className="flex items-center">

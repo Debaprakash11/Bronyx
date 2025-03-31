@@ -17,7 +17,7 @@ const Contact = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="bg-gradient-to-r from-blue-500 to-indigo-600 p-8 md:p-16 rounded-3xl shadow-xl max-w-4xl mx-auto my-12 mt-20 text-white"
+      className="bg-gradient-to-r from-blue-500 to-indigo-600 p-8 md:p-16 rounded-3xl shadow-xl max-w-4xl mx-auto my-12 mt-16 text-white"
     >
       <motion.h1
         variants={itemVariants}

@@ -25,6 +25,7 @@ import PackingAndMoving from "./ServicePages/PackingAndMoving";
 import CarShifting from "./ServicePages/CarShifting";
 import BikeShifting from "./ServicePages/BikeShifting";
 import About from "./pages/About";
+import GetQuotationModal from "./pages/GetQuotationModal";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/quote" element={<GetQuotationModal/>} />
         
         
         
