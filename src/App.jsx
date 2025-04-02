@@ -26,6 +26,11 @@ import CarShifting from "./ServicePages/CarShifting";
 import BikeShifting from "./ServicePages/BikeShifting";
 import About from "./pages/About";
 import GetQuotationModal from "./pages/GetQuotationModal";
+import UniqueFeatures from "./pages/UniqueFeatures";
+import WelcomeSection from "./pages/WelcomeSection";
+import OurProcess from "./pages/OurProcess";
+import OperationalCities from "./pages/OperationalCities";
+import FeaturedAssociations from "./pages/FeaturedAssociations";
 
 function App() {
   return (
@@ -44,6 +49,13 @@ function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/quote" element={<GetQuotationModal/>} />
+
+        <Route path="/unique" element={<UniqueFeatures/>} />
+        <Route path="/welcome" element={<WelcomeSection/>} />
+        <Route path="/ourprocess" element={<OurProcess/>} />
+        <Route path="/operation" element={<OperationalCities/>} />
+        <Route path="/featured" element={<FeaturedAssociations/>} />
+
         
         
         
