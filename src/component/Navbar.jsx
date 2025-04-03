@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
-import Logo from "../assets/Logo.webp"; // Converted to WebP for better performance
+import Logo from "../assets/new Logo.png"; // Converted to WebP for better performance
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
