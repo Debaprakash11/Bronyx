@@ -155,7 +155,7 @@ const Booking = () => {
                           className="pl-10 w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                           whileFocus="focus"
                           variants={inputVariants}
-                          placeholder="John Doe"
+                          placeholder="Your name "
                         />
                       </div>
                     </motion.div>

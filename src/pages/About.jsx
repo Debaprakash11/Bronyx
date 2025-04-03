@@ -35,7 +35,7 @@ const About = () => {
                 transition={{ duration: 0.6 }}
                 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-6"
               >
-                About BRONYX Movers
+                About BRONYX
               </motion.h1>
 
               <motion.p

@@ -153,9 +153,9 @@ const Contact = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
                   <p className="text-gray-600">
-                    plotNo-213,Bajrangi Bihar,lane 2,Chakeisihani <br />
-                    Bhubaneswar,Odisha 751017<br />
-                    India
+                    Plot No-213, Bajrangi Bihar, lane 2, Chakeisihani <br />
+                    Bhubaneswar, Odisha - 751017, India<br />
+                    
                   </p>
                 </div>
               </div>
