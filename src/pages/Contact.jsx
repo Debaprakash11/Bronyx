@@ -84,7 +84,7 @@ const Contact = () => {
             variants={itemVariants}
             className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
           >
-            Contact BRONYX PACKERS & MOVERS
+            Contact BRONYX PACKERS MOVERS
           </motion.h1>
           <motion.p
             variants={itemVariants}
@@ -153,8 +153,8 @@ const Contact = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
                   <p className="text-gray-600">
-                    123 Business Park Avenue<br />
-                    Mumbai, Maharashtra 400001<br />
+                    plotNo-213,Bajrangi Bihar,lane 2,Chakeisihani <br />
+                    Bhubaneswar,Odisha 751017<br />
                     India
                   </p>
                 </div>
@@ -186,7 +186,7 @@ const Contact = () => {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">Message Sent Successfully!</h3>
                   <p className="text-gray-600 mb-6">
-                    Thank you for contacting BRONYX PACKERS & MOVERS. Our team will get back to you shortly.
+                    Thank you for contacting BRONYX PACKERS  MOVERS. Our team will get back to you shortly.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}

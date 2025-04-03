@@ -25,7 +25,7 @@ const Home = () => {
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
             BRONYX <br />
-            <span className="text-blue-300 text-3xl sm:text-4xl">PACKERS & MOVERS</span>
+            <span className="text-white-300 text-3xl sm:text-4xl">PACKERS MOVERS</span>
           </h1>
           <p className="mt-4 text-lg text-blue-100">
             Trusted relocation services with a commitment to excellence. We make your move seamless, safe, and stress-free.

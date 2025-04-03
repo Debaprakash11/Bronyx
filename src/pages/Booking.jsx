@@ -118,7 +118,7 @@ const Booking = () => {
                 <FaCheckCircle className="mx-auto text-6xl text-green-500 mb-6" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Booking Submitted Successfully!</h3>
                 <p className="text-lg text-gray-600 mb-8">
-                  Thank you for choosing BRONYX PACKERS & MOVERS. Our team will contact you shortly to confirm your booking details.
+                  Thank you for choosing BRONYX PACKERS MOVERS. Our team will contact you shortly to confirm your booking details.
                 </p>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -173,7 +173,7 @@ const Booking = () => {
                           className="pl-10 w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                           whileFocus="focus"
                           variants={inputVariants}
-                          placeholder="john@example.com"
+                          placeholder="name@example.com"
                         />
                       </div>
                     </motion.div>
@@ -191,7 +191,7 @@ const Booking = () => {
                           className="pl-10 w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                           whileFocus="focus"
                           variants={inputVariants}
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="+91 123-4567-890"
                         />
                       </div>
                     </motion.div>

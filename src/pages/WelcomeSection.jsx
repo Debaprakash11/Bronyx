@@ -14,7 +14,7 @@ const WelcomeSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Welcome to <span className="text-blue-600">BRONYX</span> PACKERS & MOVERS
+              Welcome to <span className="text-blue-600">BRONYX</span> PACKERS  MOVERS
             </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
