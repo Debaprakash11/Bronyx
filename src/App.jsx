@@ -49,15 +49,11 @@ function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/quote" element={<GetQuotationModal/>} />
-
         <Route path="/unique" element={<UniqueFeatures/>} />
         <Route path="/welcome" element={<WelcomeSection/>} />
         <Route path="/ourprocess" element={<OurProcess/>} />
         <Route path="/operation" element={<OperationalCities/>} />
         <Route path="/featured" element={<FeaturedAssociations/>} />
-
-        
-        
         
         {/* nested Services layers  */}
         <Route path="/services/packingandmoving" element={<PackingAndMoving />} />

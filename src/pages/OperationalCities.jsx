@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import { FaShieldAlt, FaAward, FaHandHoldingHeart, FaMapMarkedAlt, FaTruckMoving, FaBoxes, FaUsers, FaCheckCircle } from "react-icons/fa";
 
 const OperationalCities = () => {
     const cities = [
