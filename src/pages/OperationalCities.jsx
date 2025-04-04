@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const OperationalCities = () => {
     const cities = [
-      "Mumbai", "Delhi", "Bangalore", "Hyderabad", 
+      "Bhubaneswar","Mumbai", "Delhi", "Bangalore", "Hyderabad", 
       "Chennai", "Kolkata", "Pune", "Ahmedabad",
       "Jaipur", "Lucknow", "Surat", "Nagpur"
     ];
