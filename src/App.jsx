@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import AdminDashboard from "./pages/AdminDashboard";
+import ScrollToTop from "./component/ScrollToTop";
 // import Page1 from "./pages/Page1";
 import Terms from "./pages/Terms";
 import Faq from "./pages/Faq";
@@ -35,6 +36,7 @@ import FeaturedAssociations from "./pages/FeaturedAssociations";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
