@@ -140,12 +140,12 @@ const Navbar = () => {
 
               {/* Phone Button with animated ring */}
               <a
-                href="tel:+18917340255"
+                href="tel:+17090950255"
                 className="ml-4 flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
               >
                 <FaPhoneAlt className="text-sm shrink-0" />
                 <span className="text-sm font-semibold whitespace-nowrap">
-                  +91 891-734-0255
+                  +91 709-095-0255
                 </span>
               </a>
             </div>

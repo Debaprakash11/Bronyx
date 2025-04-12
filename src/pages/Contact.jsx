@@ -116,7 +116,7 @@ const Contact = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">Phone Support</h3>
                   <p className="text-gray-600 mb-2">Available 24/7 for urgent inquiries</p>
                   <a href="tel:+918917340255" className="text-blue-600 font-medium hover:text-blue-800 transition-colors">
-                    +91 891-734-0255
+                    +91 709-095-0255
                   </a>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
                   <p className="text-gray-600 mb-2">Typically respond within 1 business day</p>
                   <a href="mailto:info@bronyxpackers.com" className="text-blue-600 font-medium hover:text-blue-800 transition-colors">
-                    info@bronyxpackers.com
+                    bronyxpackers@gmail.com
                   </a>
                 </div>
               </div>

@@ -13,7 +13,6 @@ import Terms from "./pages/Terms";
 import Faq from "./pages/Faq";
 import Privacy from "./pages/Privacy";
 import Blog from "./pages/Blog";
-
 import HouseholdShifting from "./ServicePages/HouseholdShifting ";
 import Insurance from "./ServicePages/Insurance";
 import LoadingAndUnloading from "./ServicePages/LoadingAndUnloading";
@@ -56,7 +55,6 @@ function App() {
         <Route path="/ourprocess" element={<OurProcess/>} />
         <Route path="/operation" element={<OperationalCities/>} />
         <Route path="/featured" element={<FeaturedAssociations/>} />
-        
         {/* nested Services layers  */}
         <Route path="/services/packingandmoving" element={<PackingAndMoving />} />
         <Route path="/services/carshifting" element={<CarShifting/>} />
@@ -68,13 +66,10 @@ function App() {
         <Route path="/services/premoving" element={<PreMoving/>} />
         <Route path="/services/quotation" element={<Quotation />} />
         <Route path="/services/safestorage" element={<SafeStorage />} />
-        <Route path="/services/smartmovebudget" element={<SmartMoveBudget />} />
-     
-        
+        <Route path="/services/smartmovebudget" element={<SmartMoveBudget />} />        
       </Routes>
       <Footer/>
     </Router>
   );
 }
-
 export default App;
