@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { 
-  FaTruckMoving, 
-  FaBoxes, 
-  FaShieldAlt, 
+import {
+  FaTruckMoving,
+  FaBoxes,
+  FaShieldAlt,
   FaHandHoldingHeart,
   FaStar,
   FaMapMarkerAlt,
@@ -26,17 +26,17 @@ const Home = () => {
       {/* Hero Section with Video Background */}
       <section className="relative w-full min-h-[70vh] md:h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 bg-blue-900/80 z-0">
-          <video 
-            autoPlay 
-            loop 
-            muted 
+          <video
+            autoPlay
+            loop
+            muted
             playsInline
             className="w-full h-full object-cover"
           >
             <source src="/moving-truck.mp4" type="video/mp4" />
           </video>
         </div>
-        
+
         <motion.div
           className="text-white max-w-4xl relative z-10"
           initial={{ opacity: 0, y: -20 }}
@@ -54,11 +54,11 @@ const Home = () => {
               <span className="text-yellow-300 text-3xl sm:text-4xl font-medium">PACKERS & MOVERS</span>
             </h1>
           </motion.div>
-          
+
           <p className="mt-4 text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
             Trusted relocation services with a commitment to excellence. We make your move seamless, safe, and stress-free.
           </p>
-          
+
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -68,7 +68,7 @@ const Home = () => {
             >
               <FaTruckMoving className="inline-block mr-2" /> Get Your Free Quote
             </motion.button>
-            
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -79,9 +79,9 @@ const Home = () => {
             </motion.button>
           </div>
         </motion.div>
-        
+
         {/* Scrolling indicator */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
@@ -113,7 +113,7 @@ const Home = () => {
       {/* Features Section */}
       <div className="py-12 md:py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -122,28 +122,28 @@ const Home = () => {
           >
             Why Choose <span className="text-blue-600">Bronyx Packers?</span>
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { 
+              {
                 icon: <FaTruckMoving className="text-blue-600 text-4xl mb-4" />,
                 title: "Fast & Efficient",
                 text: "Timely transportation with GPS-tracked vehicles",
                 color: "bg-blue-100"
               },
-              { 
+              {
                 icon: <FaBoxes className="text-blue-600 text-4xl mb-4" />,
                 title: "Secure Packing",
                 text: "Professional materials and techniques for all items",
                 color: "bg-yellow-100"
               },
-              { 
+              {
                 icon: <FaShieldAlt className="text-blue-600 text-4xl mb-4" />,
                 title: "Fully Insured",
                 text: "Comprehensive coverage for complete peace of mind",
                 color: "bg-green-100"
               },
-              { 
+              {
                 icon: <FaHandHoldingHeart className="text-blue-600 text-4xl mb-4" />,
                 title: "24/7 Support",
                 text: "Dedicated team available round the clock",
@@ -179,7 +179,7 @@ const Home = () => {
         >
           <Services />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -188,7 +188,7 @@ const Home = () => {
         >
           <Booking />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -197,7 +197,7 @@ const Home = () => {
         >
           <WelcomeSection />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -206,7 +206,7 @@ const Home = () => {
         >
           <OurProcess />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -215,7 +215,7 @@ const Home = () => {
         >
           <FeaturedAssociations />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -224,7 +224,7 @@ const Home = () => {
         >
           <OperationalCities />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -236,18 +236,26 @@ const Home = () => {
       </div>
 
       {/* Floating WhatsApp Button */}
-      <motion.div 
+      <motion.div
         className="fixed bottom-6 right-6 z-50"
         whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
       >
-        <a 
-          href="https://wa.me/yournumber" 
-          target="_blank" 
+        <a
+          href="https://wa.me/917090950255?text=Hello"
+          target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 text-white p-4 rounded-full shadow-xl flex items-center justify-center"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-colors duration-300"
+          aria-label="Chat on WhatsApp"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 448 512"
+            fill="currentColor"
+          >
+            <path d="M380.9 97.1C339-2.6 239.4-18.6 148.6 23.3 86.8 50.8 43.8 106.5 35.6 174.7c-8.2 68.2 12.3 136.1 55.8 187.8l-23.6 84.5 86.4-22.7c50.7 28.4 109.5 34.9 164.4 18.7 54.8-16.2 99.3-55.7 123-106.4 23.7-50.7 25.6-108.5 5.3-160.5zM223.8 392c-35.4 0-70-10.5-99.4-30.2l-7.1-4.7-51.3 13.5 13.7-49.7-4.7-7c-36.8-53-47.6-120.5-28.9-181.7C73 101.4 113.2 60.9 165.1 38.7c51.9-22.2 111-20 160.3 6 49.2 26 83.7 71.4 95.6 124.5 11.9 53-1.2 108.5-36.2 151-35 42.5-86.4 66.8-140.9 66.8zm101.8-138.6c-5.5-2.8-32.4-16-37.5-17.8-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.4 17.8-17.6 21.5-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.6-66.2-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30-17.1-41.1-4.5-10.8-9.1-9.4-12.5-9.6-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.7 6.9c-5.1 5.6-19.5 19-19.5 46.3s20 53.7 22.8 57.4c2.8 3.7 39.5 60.3 95.8 84.6 13.4 5.8 23.8 9.3 31.9 11.9 13.4 4.2 25.6 3.6 35.2 2.2 10.7-1.6 32.4-13.2 37-26 4.6-12.8 4.6-23.7 3.2-26.3-1.3-2.6-5-4.2-10.5-7z" />
           </svg>
         </a>
       </motion.div>
