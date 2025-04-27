@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaArrowRight, FaShieldAlt, FaTruck, FaBoxOpen, FaHome, FaBuilding, FaCalendarAlt, FaDollarSign, FaWarehouse } from "react-icons/fa";
+import { FaArrowRight, FaShieldAlt, FaTruck, FaBoxOpen, FaHome, FaBuilding, FaCalendarAlt, FaWarehouse , FaRupeeSign} from "react-icons/fa";
 import PackImg from "../assets/Banner4.jpg";
 import CarImg from "../assets/Car Shifting/WhatsApp Image 2025-03-29 at 00.53.07_4f6bf4a8.jpg";
 import BikeImg from "../assets/Banner6.jpg";
@@ -75,7 +75,7 @@ const services = [
     name: "Quotation", 
     img: QuoteImg, 
     path: "/services/quotation",
-    icon: <FaDollarSign className="text-blue-500 text-2xl" />,
+    icon: <FaRupeeSign className="text-blue-500 text-2xl" />,
     desc: "Transparent pricing with no hidden costs"
   },
   { 
@@ -89,7 +89,7 @@ const services = [
     name: "Smart Move Budget", 
     img: BudgetImg, 
     path: "/services/smartmovebudget",
-    icon: <FaDollarSign className="text-blue-500 text-2xl" />,
+    icon: <FaRupeeSign className="text-blue-500 text-2xl" />,
     desc: "Affordable moving without compromising quality"
   },
 ];

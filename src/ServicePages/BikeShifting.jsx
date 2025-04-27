@@ -1,5 +1,4 @@
 import React from 'react';
-
 const BikeShifting = () => {
   return (
     <div className="bg-gradient-to-br from-blue-600 to-indigo-800 py-12 px-4 sm:px-6">
@@ -31,8 +30,8 @@ const BikeShifting = () => {
                 </div>
               </div>
               <div className="md:w-1/2">
-                <img 
-                  src="https://www.transportify.com.ph/wp-content/uploads/2021/03/motorcycle-delivery-1.png" 
+                <img
+                  src="https://www.transportify.com.ph/wp-content/uploads/2021/03/motorcycle-delivery-1.png"
                   alt="Professional Bike Transport"
                   className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition duration-500"
                 />
@@ -43,7 +42,7 @@ const BikeShifting = () => {
           {/* Features Section */}
           <div className="bg-white/5 p-8 md:p-12">
             <h2 className="text-3xl font-bold text-center text-white mb-12">Why Choose <span className="text-yellow-300">Bronyx</span> for Bike Transport?</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white/10 p-6 rounded-xl border border-white/20 hover:border-yellow-300 transition">
                 <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -54,7 +53,7 @@ const BikeShifting = () => {
                 <h3 className="text-xl font-bold text-white text-center mb-2">100% Safe Transport</h3>
                 <p className="text-white/80 text-center">Specialized packing materials and secure transport to prevent any damage to your bike.</p>
               </div>
-              
+
               <div className="bg-white/10 p-6 rounded-xl border border-white/20 hover:border-yellow-300 transition">
                 <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -64,7 +63,7 @@ const BikeShifting = () => {
                 <h3 className="text-xl font-bold text-white text-center mb-2">On-Time Delivery</h3>
                 <p className="text-white/80 text-center">Guaranteed delivery as per schedule with real-time tracking available.</p>
               </div>
-              
+
               <div className="bg-white/10 p-6 rounded-xl border border-white/20 hover:border-yellow-300 transition">
                 <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -80,11 +79,11 @@ const BikeShifting = () => {
           {/* Gallery Section */}
           <div className="p-8 md:p-12 bg-white/5">
             <h2 className="text-3xl font-bold text-center text-white mb-12">Our <span className="text-yellow-300">Bike Transport</span> Process</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="group relative overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src="https://www.shiftingsolutions.in/blog/wp-content/uploads/2021/12/How-to-Shift-Bike-From-One-State-to-Another.jpg" 
+                <img
+                  src="https://www.shiftingsolutions.in/blog/wp-content/uploads/2021/12/How-to-Shift-Bike-From-One-State-to-Another.jpg"
                   alt="Bike Inspection"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
                 />
@@ -97,10 +96,10 @@ const BikeShifting = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="group relative overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src="https://www.marutipackersmovers.com/blog/wp-content/uploads/2022/05/Packing-Process-of-Bike-Shifting.jpg" 
+                <img
+                  src="https://www.marutipackersmovers.com/blog/wp-content/uploads/2022/05/Packing-Process-of-Bike-Shifting.jpg"
                   alt="Professional Packing"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
                 />
@@ -113,10 +112,10 @@ const BikeShifting = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="group relative overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src="https://www.mumbaipackersandmovers.org/blog/wp-content/uploads/2021/12/Bike-Transportation-Service.jpg" 
+                <img
+                  src="https://www.mumbaipackersandmovers.org/blog/wp-content/uploads/2021/12/Bike-Transportation-Service.jpg"
                   alt="Secure Loading"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
                 />
@@ -129,10 +128,10 @@ const BikeShifting = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="group relative overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src="https://www.safebuddy.in/blog/wp-content/uploads/2021/12/bike-transportation-service.jpg" 
+                <img
+                  src="https://www.safebuddy.in/blog/wp-content/uploads/2021/12/bike-transportation-service.jpg"
                   alt="Timely Delivery"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
                 />
@@ -167,6 +166,55 @@ const BikeShifting = () => {
                 </svg>
                 Schedule Online
               </button>
+            </div>
+          </div>
+
+          {/* Trusted by Thousands Section */}
+          <div className="bg-white/10 p-10 rounded-xl mt-10 shadow-inner">
+            <h2 className="text-3xl text-white font-bold text-center mb-6">
+              Trusted by <span className="text-yellow-300">Thousands</span> of Customers Across India
+            </h2>
+            <p className="text-white/90 max-w-4xl mx-auto text-center text-lg">
+              With over a decade of experience, <span className="text-yellow-300 font-semibold">Bronyx Packers and Movers</span> has successfully transported more than 25,000 bikes nationwide. Our services span across all major cities—Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Pune, and beyond. Customer satisfaction is our #1 priority, and our repeat clientele is a testament to the care and precision we deliver with every bike move.
+            </p>
+          </div>
+
+          {/* Assurance Section */}
+          <div className="bg-blue-900/50 mt-10 p-10 rounded-xl shadow-xl">
+            <h3 className="text-3xl font-bold text-yellow-300 text-center mb-6">
+              Our Promise to You
+            </h3>
+            <ul className="text-white/90 max-w-4xl mx-auto list-disc list-inside space-y-4 text-lg">
+              <li>Fully insured bike transport services with end-to-end support.</li>
+              <li>Live tracking and real-time updates on shipment status.</li>
+              <li>No hidden charges – what you see is what you pay.</li>
+              <li>24/7 customer care support to resolve your queries instantly.</li>
+              <li>Free consultation and quote generation based on your requirements.</li>
+            </ul>
+          </div>
+
+          {/* FAQs Section */}
+          <div className="bg-white/5 mt-10 p-10 rounded-xl shadow-lg">
+            <h2 className="text-3xl text-white font-bold text-center mb-10">
+              Frequently Asked Questions (FAQs)
+            </h2>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <div>
+                <h4 className="text-xl text-yellow-300 font-semibold">Q. Is my bike insured during transport?</h4>
+                <p className="text-white/80">Yes, every bike we transport is covered under a comprehensive transit insurance policy to ensure complete peace of mind.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-yellow-300 font-semibold">Q. How do I prepare my bike before pickup?</h4>
+                <p className="text-white/80">Please clean your bike, remove all personal belongings, and keep the fuel tank less than 25% full. We’ll take care of the rest!</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-yellow-300 font-semibold">Q. How long will it take to deliver my bike?</h4>
+                <p className="text-white/80">Delivery timelines vary depending on the distance but typically range from 3–7 days. You’ll get an accurate ETA when booking.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-yellow-300 font-semibold">Q. Can I track my bike during transit?</h4>
+                <p className="text-white/80">Absolutely. We provide live tracking options so you always know where your bike is.</p>
+              </div>
             </div>
           </div>
         </div>

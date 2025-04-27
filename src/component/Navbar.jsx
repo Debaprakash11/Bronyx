@@ -200,7 +200,7 @@ const Navbar = () => {
             <MobileNavLink to="/contact" onClick={closeAllMenus}>Contact</MobileNavLink>
 
             <a
-              href="tel:+18917340255"
+              href="tel:+91 7090950255"
               className="mt-auto mx-2 flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-xl transition-colors"
               onClick={closeAllMenus}
             >
